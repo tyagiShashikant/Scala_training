@@ -25,7 +25,8 @@ object  main extends App{
   temp=obj.insert(temp,20)
   temp=obj.insert(temp,1)
   temp=obj.insert(temp,8)
-  println(temp)
+  println(temp
+  )
 println(obj.contains(temp,1))
 
 

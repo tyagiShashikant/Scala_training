@@ -1,7 +1,7 @@
 package Queue
 
 
-class Queue {
+object Queue extends  App{
 
   def enqueue(inputList: List[Int], value: Int): List[Int] =  inputList :+ value
 
@@ -11,18 +11,9 @@ class Queue {
       case Nil => throw new NoSuchElementException()
 
       case h :: tail => tail
-
+    //  case _=> inputList.tail
     }
   }
+  val lst= List(1,2,3,4,5,6)
+  println(dequeue(lst))
 }
-  object main extends App{
-    val queue1= new Queue
-    val list= List(1,2,3,4,5)
-    println(list)
-   val list2 =queue1.enqueue(list,9)
-    println(list2)
-   val list3= queue1.dequeue(list2)
-    println(list3)
-
-
-  }
